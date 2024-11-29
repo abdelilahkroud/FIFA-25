@@ -83,24 +83,14 @@ section{
     border-radius: 4vh;
     height: 8vw;
     width: 7%;
-    background-color: rgba(210, 0, 26,0.5);
-    
+    background-color: rgba(9, 185, 254, 0.5);
+
 }
-@keyframes color{
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-}
+
 section:hover{
     cursor: pointer;
-    box-shadow: 0.3vw 0.3vw  0.5vw #EBFF08;
-    background:linear-gradient(45deg ,#09e37d,#09FE8B,#0DF3FF,#EBFF08);
+    box-shadow: 0.3vw 0.3vw  0.5vw #0DF3FF;
+    background:linear-gradient(45deg ,#09e37d,rgb(9, 254, 139),#0DF3FF,#EBFF08);
     background-size: 300% 300%;
     animation: color 1s ease-in-out infinite;
 }
@@ -119,7 +109,7 @@ section:hover{
     
 }
 .kart:hover{
-    box-shadow: 0.3vw 0.3vw  0.5vw #EBFF08;
+    box-shadow: 0.3vw 0.3vw  0.5vw #0DF3FF;
 }
 .kartscroll{
     border:0.3vh solid rgba(60, 0, 255, 0.7);
@@ -145,6 +135,18 @@ p{
     position: relative;
     left: 17%;
     font-size: 0.8vw;
+}
+
+@keyframes color{
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
 }
 
 
