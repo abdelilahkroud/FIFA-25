@@ -93,6 +93,7 @@ section:hover{
     background:linear-gradient(45deg ,#09e37d,rgb(9, 254, 139),#0DF3FF,#EBFF08);
     background-size: 300% 300%;
     animation: color 1s ease-in-out infinite;
+    transition: 0.5s;
 }
 
 .kart{
@@ -106,10 +107,12 @@ section:hover{
     background:linear-gradient(45deg ,#EBFF08,#0ae880,#0DF3FF,#EBFF08);
     background-size: 300% 300%;
     animation: color 6s ease-in-out infinite;
+    transition: 0.5s;
     
 }
 .kart:hover{
     box-shadow: 0.3vw 0.3vw  0.5vw #0DF3FF;
+    transition: 0.5s;
 }
 .kartscroll{
     border:0.3vh solid rgba(60, 0, 255, 0.7);

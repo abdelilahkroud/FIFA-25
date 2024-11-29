@@ -2,55 +2,65 @@
     position: absolute;
     left: 2%;
     top: 41%;
+    transition: 0.5s;
 }
 #CBL{
     position: absolute;
     left: 12%;
     top: 19%;
+    transition: 0.5s;
 }
 #CBR{
     position: absolute;
     left: 12%;
     top: 59%;
+    transition: 0.5s;
 }
 #LB{
     position: absolute;
     left: 22%;
     top: 1%;
+    transition: 0.5s;
 }
 #RB{
     position: absolute;
     left: 22%;
     top: 81%;
+    transition: 0.5s;
 }
 #DM{
     position: absolute;
     left: 30%;
     top: 41%;
+    transition: 0.5s;
 }
 #CML{
     position: absolute;
     left: 45%;
     top: 18%;
+    transition: 0.5s;
 }
 #CMR{
     position: absolute;
     left: 45%;
     top: 64%;
+    transition: 0.5s;
 }
 #LW{
     position: absolute;
     left: 70%;
     top: 77%;
+    transition: 0.5s;
 }
 #RW{
     position: absolute;
     left: 70%;
     top: 7%;
+    transition: 0.5s;
 }
 #ST{
-
     position: absolute;
     left: 65%;
     top: 42%;
+    transition: 0.5s;
 }

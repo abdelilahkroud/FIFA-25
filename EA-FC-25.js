@@ -1,8 +1,14 @@
+
 const btn = document.getElementById("changeFormation");
 
-    btn.addEventListener("click", changeFormation);
 
+    btn.addEventListener("click", changeFormation);
+    
     function changeFormation() {
+
+        
+
+    document.getElementById("btnFor").innerHTML = "4-3-3";
 
     const changePostGK = document.getElementById("GK");
     changePostGK.id = "GK-prime";
@@ -36,5 +42,8 @@ const btn = document.getElementById("changeFormation");
 
     const changePostST = document.getElementById("ST");
     changePostST.id = "ST-prime";
+
+
+
 
 }
