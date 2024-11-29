@@ -3,6 +3,9 @@ const btn = document.getElementById("changeFormation");
     btn.addEventListener("click", changeFormation);
 
     function changeFormation() {
+
+    const changePostGK = document.getElementById("GK");
+    changePostGK.id = "GK-prime";
         
     const changePostCBL = document.getElementById("CBL");
     changePostCBL.id = "CBL-prime";
