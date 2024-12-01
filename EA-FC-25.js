@@ -1,18 +1,16 @@
 
 const btn = document.getElementById("changeFormation");
 
-    var bool = true;
+    var plan = true;
 
     btn.addEventListener("click", () => {
-        if(bool) {
-            console.log(bool);
-            
+        if(plan) {            
             changeFormation();
-            bool = false;
+            plan = false;
         }
         else{            
             defaultFormation();
-            bool=true
+            plan=true
         }
     });
 
@@ -56,11 +54,8 @@ const btn = document.getElementById("changeFormation");
 
     const changePostST = document.getElementById("ST");
     changePostST.id = "ST-prime";
-
-    localStorage.setItem("name", "KROUD");
-
-
 }
+
 
     function defaultFormation(){
 
