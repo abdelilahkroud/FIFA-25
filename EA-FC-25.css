@@ -158,10 +158,9 @@ p{
 }
 
 #ajout{
-  padding: 1vw;
+  padding: 0.7vw;
   font-size: 1vw;
-  outline: none;
-  border: none;
+  margin: 0.5vh 0vh 0vh 0.5vh;
   border-radius: 10px;
   transition: 0.5s;
   background: #070e2f;
@@ -293,3 +292,134 @@ p{
 
 
 
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    border-radius: 1vh;
+    background-color: #0DF3FF;
+    margin: auto;
+    padding: 0.4vw;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 34vw;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.form {
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: beige;
+  --main-color: black;
+  padding: 1vh;
+  background: #09e37d;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1vh;
+  border-radius: 1vh;
+  border: 1vh solid var(--main-color);
+  box-shadow: 0.1vh 0.1vh var(--main-color);
+}
+
+.title {
+  color: var(--font-color);
+  font-weight: 900;
+  font-size: 1.2vw;
+  margin-bottom: 1vh;
+}
+
+.title span {
+  color: var(--font-color-sub);
+  font-weight: 600;
+  font-size: 1vw;
+}
+
+.input {
+  width: 50%;
+  height: 3vw;
+  border-radius: 1vh;
+  border: 0.1vh solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 0.6vh 0.6vh var(--main-color);
+  font-size: 0.8vw;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 1vh 2vh;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+.input:focus {
+  border: 0.3vh solid var(--input-focus);
+}
+
+.posit {
+  display: flex;
+  gap: 1vh;
+}
+
+.button-log {
+  padding: 1vw;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0.1vh solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 0.4vh 0.4vh var(--main-color);
+  color: var(--font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button-log:active, .button-confirm:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+.button-confirm {
+  margin: 1vw auto 0 auto;
+  width: 20%;
+  height: 3vw;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+}

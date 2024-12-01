@@ -14,9 +14,6 @@ const btn = document.getElementById("changeFormation");
         }
     });
 
-
-  
-    
     function changeFormation() {
 
     document.getElementById("btnFor").innerHTML = "3-4-3";
@@ -56,7 +53,6 @@ const btn = document.getElementById("changeFormation");
     changePostST.id = "ST-prime";
 }
 
-
     function defaultFormation(){
 
         document.getElementById("btnFor").innerHTML = "4-3-3";
@@ -92,5 +88,24 @@ const btn = document.getElementById("changeFormation");
 
     const changePostST = document.getElementById("ST-prime");
     changePostST.id = "ST";
+ }
 
-    }
+ var modal = document.getElementById("myModal");
+
+var btnu = document.getElementById("ajout");
+
+var span = document.getElementsByClassName("close")[0];
+
+btnu.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
