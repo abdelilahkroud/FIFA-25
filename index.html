@@ -20,10 +20,10 @@
             <div class="goal-area1 goal-left1"></div>
             <div class="goal-area1 goal-right1"></div>
         </div>
-        
+
         <div class="allscrol">
-            
-            <div class="kartscroll" >
+
+            <div class="kartscroll" id="carts">
 
                 <div id="rowcart1">
 
@@ -31,54 +31,54 @@
 
                     <div id="myModal" class="modal">
                         <div class="modal-content">
-                          
-                          <form class="form">
 
-                            <span class="close">&times;</span>
-                            <div class="title">Salut,<br><span>Entrer les information</span></div>
-                            <input class="input" placeholder="Nom">
-                            <input class="input" placeholder="Prenom">
-                            <input class="input" placeholder="nationality">
-                            <input class="input" placeholder="club">
-                            <div class="title"><span>choix une position</span></div>
+                            <form class="form" id="ajouter" method="get">
 
-                            <div class="posit">
-                              <div class="button-log">
-                              GK
-                              </div>
-                              <div class="button-log">
-                                CB
-                              </div>
-                              <div class="button-log">
-                                LB
-                              </div>
-                              <div class="button-log">
-                                RB
-                              </div>
-                              <div class="button-log">
-                                DM
-                              </div>
-                              <div class="button-log">
-                                CM
-                              </div>
-                              <div class="button-log">
-                                RW
-                              </div>
-                              <div class="button-log">
-                                LW
-                              </div>
-                              <div class="button-log">
-                                ST
-                              </div>
-                            </div>
-                            <button class="button-confirm">Confimer →</button>
+                                <span class="close">&times;</span>
+                                <div class="title">Salut,<br><span>Entrer les information</span></div>
+                                <input class="input" type="text" name="nom" id="nom" placeholder="Nom">
+                                <input class="input" type="text" name="prenom" id="prenom" placeholder="Prenom">
+                                <input class="input" placeholder="nationality" type="text" name="nation" id="nation">
+                                <input class="input" placeholder="club" type="text" name="club" id="club">
+                                <div class="title"><span>choix une position</span></div>
 
-                          </form>
+                                <div class="posit">
+                                    <div class="button-log" id="pos-GK">
+                                        GK
+                                    </div>
+                                    <div class="button-log" id="pos-CB">
+                                        CB
+                                    </div>
+                                    <div id="pos-LB" class="button-log">
+                                        LB
+                                    </div>
+                                    <div class="button-log" id="pos-RB">
+                                        RB
+                                    </div>
+                                    <div class="button-log" id="pos-DM">
+                                        DM
+                                    </div>
+                                    <div class="button-log" id="pos-CM">
+                                        CM
+                                    </div>
+                                    <div class="button-log" id="pos-RW">
+                                        RW
+                                    </div>
+                                    <div class="button-log" id="pos-LW">
+                                        LW
+                                    </div>
+                                    <div class="button-log" id="pos-ST">
+                                        ST
+                                    </div>
+                                </div>
+                                <button class="button-confirm" id="submit">Confimer →</button>
+
+                            </form>
 
                         </div>
-                      </div>
+                    </div>
 
-                      
+
                     <div class="kart">
                         <img src="/images/35.png">
                         <h1>Bounou</h1>
@@ -112,7 +112,7 @@
                 </div>
 
                 <div id="space"></div>
-                
+
                 <div class="rowcart2">
                     <div class="kart">
                         <img src="/images/39.png">
@@ -145,14 +145,14 @@
                         <p>Position : GK</p>
                     </div>
                 </div>
-            </div>      
-            
+            </div>
+
             <button id="changeFormation">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span id="btnFor" style="font-size: 1.7vw;">3-4-4</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span id="btnFor" style="font-size: 1.7vw;">3-4-4</span>
             </button>
 
         </div>
@@ -160,63 +160,64 @@
 
 
 
-        <section id="GK">
-            <img src="/images/24.png">
-            <h1>Rudiger</h1>
-            <p>Position : GK</p>
-        </section>
-        <section id="CBL">
-            <img src="/images/25.png">
-            <h1>Marcello</h1>
-            <p>Position : CB</p>
-        </section>
-        <section id="CBR">
-            <img src="/images/26.png">
-            <h1>Alponso</h1>
-            <p>Position : CB</p>
-        </section>
-        <section id="LB">
-            <img src="/images/27.png">
-            <h1>Kimmich</h1>
-            <p>Position : LB</p>
-        </section>
-        <section id="RB">
-            <img src="/images/28.png">
-            <h1>Modeic</h1>
-            <p>Position : RB</p>
-        </section>
-        <section id="DM">
-            <img src="/images/29.png">
-            <h1>Diaz</h1>
-            <p>Position : DM</p>
-        </section>
-        <section id="CML">
-            <img src="/images/30.png">
-            <h1>Benzema</h1>
-            <p>Position : CM</p>
-        </section>
-        <section id="CMR">
-            <img src="/images/31.png">
-            <h1>Haaland</h1>
-            <p>Position : CM</p>
-        </section>
-        <section id="LW">
-            <img src="/images/32.png">
-            <h1>Fernandes</h1>
-            <p>Position : LW</p>
-        </section>
-        <section id="RW">
-            <img src="/images/33.png">
-            <h1>Sancho</h1>
-            <p>Position : RW</p>
-        </section>
-        <section id="ST">
-            <img src="/images/34.png">
-            <h1>Kanté</h1>
-            <p>Position : ST</p>
-        </section>
+    <section id="GK">
+        <img src="/images/24.png">
+        <h1>Rudiger</h1>
+        <p>Position : GK</p>
+    </section>
+    <section id="CBL">
+        <img src="/images/25.png">
+        <h1>Marcello</h1>
+        <p>Position : CB</p>
+    </section>
+    <section id="CBR">
+        <img src="/images/26.png">
+        <h1>Alponso</h1>
+        <p>Position : CB</p>
+    </section>
+    <section id="LB">
+        <img src="/images/27.png">
+        <h1>Kimmich</h1>
+        <p>Position : LB</p>
+    </section>
+    <section id="RB">
+        <img src="/images/28.png">
+        <h1>Modeic</h1>
+        <p>Position : RB</p>
+    </section>
+    <section id="DM">
+        <img src="/images/29.png">
+        <h1>Diaz</h1>
+        <p>Position : DM</p>
+    </section>
+    <section id="CML">
+        <img src="/images/30.png">
+        <h1>Benzema</h1>
+        <p>Position : CM</p>
+    </section>
+    <section id="CMR">
+        <img src="/images/31.png">
+        <h1>Haaland</h1>
+        <p>Position : CM</p>
+    </section>
+    <section id="LW">
+        <img src="/images/32.png">
+        <h1>Fernandes</h1>
+        <p>Position : LW</p>
+    </section>
+    <section id="RW">
+        <img src="/images/33.png">
+        <h1>Sancho</h1>
+        <p>Position : RW</p>
+    </section>
+    <section id="ST">
+        <img src="/images/34.png">
+        <h1>Kanté</h1>
+        <p>Position : ST</p>
+    </section>
 
 
-<script src="/EA-FC-25.js"></script>
+    <script src="/EA-FC-25.js"></script>
 </body>
+
 </html>

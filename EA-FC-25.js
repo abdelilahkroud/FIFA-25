@@ -1,111 +1,181 @@
 
 const btn = document.getElementById("changeFormation");
 
-    var plan = true;
+var plan = true;
 
-    btn.addEventListener("click", () => {
-        if(plan) {            
-            changeFormation();
-            plan = false;
-        }
-        else{            
-            defaultFormation();
-            plan=true
-        }
-    });
+btn.addEventListener("click", () => {
+  if (plan) {
+    changeFormation();
+    plan = false;
+  }
+  else {
+    defaultFormation();
+    plan = true
+  }
+});
 
-    function changeFormation() {
+function changeFormation() {
 
-    document.getElementById("btnFor").innerHTML = "3-4-3";
-    
+  document.getElementById("btnFor").innerHTML = "3-4-3";
 
-    const changePostGK = document.getElementById("GK");
-    changePostGK.id = "GK-prime";
-        
-    const changePostCBL = document.getElementById("CBL");
-    changePostCBL.id = "CBL-prime";
 
-    const changePostCBR = document.getElementById("CBR");
-    changePostCBR.id = "CBR-prime";
+  const changePostGK = document.getElementById("GK");
+  changePostGK.id = "GK-prime";
 
-    const changePostLB = document.getElementById("LB");
-    changePostLB.id = "LB-prime";
+  const changePostCBL = document.getElementById("CBL");
+  changePostCBL.id = "CBL-prime";
 
-    const changePostRB = document.getElementById("RB");
-    changePostRB.id = "RB-prime";
+  const changePostCBR = document.getElementById("CBR");
+  changePostCBR.id = "CBR-prime";
 
-    const changePostDM = document.getElementById("DM");
-    changePostDM.id = "DM-prime";
+  const changePostLB = document.getElementById("LB");
+  changePostLB.id = "LB-prime";
 
-    const changePostCML = document.getElementById("CML");
-    changePostCML.id = "CML-prime";
+  const changePostRB = document.getElementById("RB");
+  changePostRB.id = "RB-prime";
 
-    const changePostCMR = document.getElementById("CMR");
-    changePostCMR.id = "CMR-prime";
+  const changePostDM = document.getElementById("DM");
+  changePostDM.id = "DM-prime";
 
-    const changePostLW = document.getElementById("LW");
-    changePostLW.id = "LW-prime";
+  const changePostCML = document.getElementById("CML");
+  changePostCML.id = "CML-prime";
 
-    const changePostRW = document.getElementById("RW");
-    changePostRW.id = "RW-prime";
+  const changePostCMR = document.getElementById("CMR");
+  changePostCMR.id = "CMR-prime";
 
-    const changePostST = document.getElementById("ST");
-    changePostST.id = "ST-prime";
+  const changePostLW = document.getElementById("LW");
+  changePostLW.id = "LW-prime";
+
+  const changePostRW = document.getElementById("RW");
+  changePostRW.id = "RW-prime";
+
+  const changePostST = document.getElementById("ST");
+  changePostST.id = "ST-prime";
 }
 
-    function defaultFormation(){
+function defaultFormation() {
 
-        document.getElementById("btnFor").innerHTML = "4-3-3";
-        const changePostGK = document.getElementById("GK-prime");
-    changePostGK.id = "GK";
-        
-    const changePostCBL = document.getElementById("CBL-prime");
-    changePostCBL.id = "CBL";
+  document.getElementById("btnFor").innerHTML = "4-3-3";
+  const changePostGK = document.getElementById("GK-prime");
+  changePostGK.id = "GK";
 
-    const changePostCBR = document.getElementById("CBR-prime");
-    changePostCBR.id = "CBR";
+  const changePostCBL = document.getElementById("CBL-prime");
+  changePostCBL.id = "CBL";
 
-    const changePostLB = document.getElementById("LB-prime");
-    changePostLB.id = "LB";
+  const changePostCBR = document.getElementById("CBR-prime");
+  changePostCBR.id = "CBR";
 
-    const changePostRB = document.getElementById("RB-prime");
-    changePostRB.id = "RB";
+  const changePostLB = document.getElementById("LB-prime");
+  changePostLB.id = "LB";
 
-    const changePostDM = document.getElementById("DM-prime");
-    changePostDM.id = "DM";
+  const changePostRB = document.getElementById("RB-prime");
+  changePostRB.id = "RB";
 
-    const changePostCML = document.getElementById("CML-prime");
-    changePostCML.id = "CML";
+  const changePostDM = document.getElementById("DM-prime");
+  changePostDM.id = "DM";
 
-    const changePostCMR = document.getElementById("CMR-prime");
-    changePostCMR.id = "CMR";
+  const changePostCML = document.getElementById("CML-prime");
+  changePostCML.id = "CML";
 
-    const changePostLW = document.getElementById("LW-prime");
-    changePostLW.id = "LW";
+  const changePostCMR = document.getElementById("CMR-prime");
+  changePostCMR.id = "CMR";
 
-    const changePostRW = document.getElementById("RW-prime");
-    changePostRW.id = "RW";
+  const changePostLW = document.getElementById("LW-prime");
+  changePostLW.id = "LW";
 
-    const changePostST = document.getElementById("ST-prime");
-    changePostST.id = "ST";
- }
+  const changePostRW = document.getElementById("RW-prime");
+  changePostRW.id = "RW";
 
- var modal = document.getElementById("myModal");
+  const changePostST = document.getElementById("ST-prime");
+  changePostST.id = "ST";
+}
+
+var modal = document.getElementById("myModal");
 
 var btnu = document.getElementById("ajout");
 
 var span = document.getElementsByClassName("close")[0];
 
-btnu.onclick = function() {
+btnu.onclick = function () {
   modal.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
+
+const addButton = document.getElementById("submit");
+const addform = document.getElementById("ajouter");
+var playerName = document.getElementById("nom");
+var playerLName = document.getElementById("prenom")
+var playerNation = document.getElementById("nation")
+var playerClub = document.getElementById("club")
+
+var carts1 = document.getElementById("rowcart1")
+var carts2 = document.getElementById("rowcart2")
+console.log(carts1);
+
+
+var plan = true;
+
+var posit = Array.from(document.querySelectorAll(".button-log"));
+
+var id = " ";
+
+console.log(posit);
+
+posit.forEach(e => {
+  e.addEventListener("click", (el) => {
+    id = el.target.id
+    console.log(id.substring(4))
+  })
+
+});
+
+addform.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  var playerInfo = ("playerinfo");
+  playerInfo = {
+    nom: playerName.value,
+    prenom: playerLName.value,
+    nation: playerNation.value,
+    club: playerClub.value,
+    position: id.substring(4)
+  }
+
+  if (plan) {
+    carts1.innerHTML += `
+                  <div class="rowcart2">
+  
+                          <img src="">
+                          <h1>${playerInfo.nom}</h1>
+                          <p>Position:${playerInfo.position}</p>2
+                      </div>
+    `
+    plan = false
+  } else {
+    carts2.innerHTML += `
+                  <div class="rowcart2">
+  
+                          <img src="">
+                          <h1>${playerInfo.nom}</h1>
+                          <p>${playerInfo.prenom}</p>2
+                      </div>
+    `
+    plan = true
+
+  }
+
+
+
+  console.log(playerInfo.nom);
+
+})
