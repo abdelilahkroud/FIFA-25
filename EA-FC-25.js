@@ -131,7 +131,7 @@ let carts2 = document.getElementById("rowcart2")
 console.log(carts1);
 
 
- plan = true;
+ let bool = true;
 
 let posit = Array.from(document.querySelectorAll(".button-log"));
 
@@ -150,9 +150,10 @@ posit.forEach(e => {
 
 addform.addEventListener("submit", (e) => {
   e.preventDefault();
-  let playerInfo = ("playerinfo");
+ 
+
   modal.style.display = "none";
-  playerInfo = {
+let  playerInfo = {
 
     nom: playerName.value,
     prenom: playerLName.value,
@@ -162,18 +163,19 @@ addform.addEventListener("submit", (e) => {
     position: id.substring(4)
     
   }
+  
+  if (bool) {
 
-  if (plan) {
     carts1.innerHTML += `
                   <div class="rowcart2">
                   <div class="kart">
                           <h1>${playerInfo.nom}</h1>
-                          <h1>${playerInfo.prenom}</h1>
                           <p>Position:${playerInfo.position}</p>
                           </div>
                       </div>
     `
-    plan = false
+ 
+    bool = false
   } else {
     carts2.innerHTML += `
                   <div class="rowcart2">
@@ -184,11 +186,10 @@ addform.addEventListener("submit", (e) => {
                           </div>
                       </div>
     `
-    plan = true
+    bool = true
 
     
   }
-  console.log(playerInfo.nom);
 
 })
 
