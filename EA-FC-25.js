@@ -1,7 +1,7 @@
 
 const btn = document.getElementById("changeFormation");
 
-var plan = true;
+let plan = true;
 
 btn.addEventListener("click", () => {
   if (plan) {
@@ -90,17 +90,20 @@ function defaultFormation() {
   changePostST.id = "ST";
 }
 
-var modal = document.getElementById("myModal");
 
-var btnu = document.getElementById("ajout");
 
-var span = document.getElementsByClassName("close")[0];
+
+let modal = document.getElementById("myModal");
+
+let btnu = document.getElementById("ajout");
+
+let span = document.getElementsByClassName("close")[0];
 
 btnu.onclick = function () {
   modal.style.display = "block";
 }
 
-span.onclick = function () {
+document.getElementById("sp").onclick = function () {
   modal.style.display = "none";
 }
 
@@ -113,21 +116,22 @@ window.onclick = function (event) {
 
 const addButton = document.getElementById("submit");
 const addform = document.getElementById("ajouter");
-var playerName = document.getElementById("nom");
-var playerLName = document.getElementById("prenom")
-var playerNation = document.getElementById("nation")
-var playerClub = document.getElementById("club")
 
-var carts1 = document.getElementById("rowcart1")
-var carts2 = document.getElementById("rowcart2")
+let playerName = document.getElementById("nom");
+let playerLName = document.getElementById("prenom")
+let playerNation = document.getElementById("nation")
+let playerClub = document.getElementById("club")
+
+let carts1 = document.getElementById("rowcart1")
+let carts2 = document.getElementById("rowcart2")
 console.log(carts1);
 
 
-var plan = true;
+ plan = true;
 
-var posit = Array.from(document.querySelectorAll(".button-log"));
+let posit = Array.from(document.querySelectorAll(".button-log"));
 
-var id = " ";
+let id = " ";
 
 console.log(posit);
 
@@ -135,6 +139,7 @@ posit.forEach(e => {
   e.addEventListener("click", (el) => {
     id = el.target.id
     console.log(id.substring(4))
+    
   })
 
 });
@@ -142,19 +147,20 @@ posit.forEach(e => {
 addform.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  var playerInfo = ("playerinfo");
+  let playerInfo = ("playerinfo");
+  modal.style.display = "none";
   playerInfo = {
     nom: playerName.value,
     prenom: playerLName.value,
     nation: playerNation.value,
     club: playerClub.value,
     position: id.substring(4)
+    
   }
 
   if (plan) {
     carts1.innerHTML += `
                   <div class="rowcart2">
-  
                           <img src="">
                           <h1>${playerInfo.nom}</h1>
                           <p>Position:${playerInfo.position}</p>2
@@ -164,10 +170,9 @@ addform.addEventListener("submit", (e) => {
   } else {
     carts2.innerHTML += `
                   <div class="rowcart2">
-  
                           <img src="">
                           <h1>${playerInfo.nom}</h1>
-                          <p>${playerInfo.prenom}</p>2
+                          <p>${playerInfo.position}</p>2
                       </div>
     `
     plan = true

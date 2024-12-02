@@ -24,54 +24,36 @@
         <div class="allscrol">
 
             <div class="kartscroll" id="carts">
-
+                
                 <div id="rowcart1">
-
+                    
                     <button id="ajout">Ajouter</button>
 
                     <div id="myModal" class="modal">
                         <div class="modal-content">
 
-                            <form class="form" id="ajouter" method="get">
+                            <form class="form" id="ajouter" >
 
-                                <span class="close">&times;</span>
+                                <span class="close" id="sp">&times;</span>
                                 <div class="title">Salut,<br><span>Entrer les information</span></div>
-                                <input class="input" type="text" name="nom" id="nom" placeholder="Nom">
+                                <input class="input" type="text" name="nom"    id="nom"    placeholder="Nom">
                                 <input class="input" type="text" name="prenom" id="prenom" placeholder="Prenom">
-                                <input class="input" placeholder="nationality" type="text" name="nation" id="nation">
-                                <input class="input" placeholder="club" type="text" name="club" id="club">
+                                <input class="input" type="text" name="nation" id="nation" placeholder="nationality">
+                                <input class="input" type="text" name="club"   id="club"   placeholder="club">
                                 <div class="title"><span>choix une position</span></div>
-
+ 
                                 <div class="posit">
-                                    <div class="button-log" id="pos-GK">
-                                        GK
-                                    </div>
-                                    <div class="button-log" id="pos-CB">
-                                        CB
-                                    </div>
-                                    <div id="pos-LB" class="button-log">
-                                        LB
-                                    </div>
-                                    <div class="button-log" id="pos-RB">
-                                        RB
-                                    </div>
-                                    <div class="button-log" id="pos-DM">
-                                        DM
-                                    </div>
-                                    <div class="button-log" id="pos-CM">
-                                        CM
-                                    </div>
-                                    <div class="button-log" id="pos-RW">
-                                        RW
-                                    </div>
-                                    <div class="button-log" id="pos-LW">
-                                        LW
-                                    </div>
-                                    <div class="button-log" id="pos-ST">
-                                        ST
-                                    </div>
+                                    <div class="button-log" id="pos-GK">GK</div>
+                                    <div class="button-log" id="pos-CB">CB</div>
+                                    <div class="button-log"nid="pos-LB">LB</div>
+                                    <div class="button-log" id="pos-RB">RB</div>
+                                    <div class="button-log" id="pos-DM">DM</div>
+                                    <div class="button-log" id="pos-CM">CM</div>
+                                    <div class="button-log" id="pos-RW">RW</div>
+                                    <div class="button-log" id="pos-LW">LW</div>
+                                    <div class="button-log" id="pos-ST">ST</div>
                                 </div>
-                                <button class="button-confirm" id="submit">Confimer →</button>
+                                <button class="button-confirm" id="submit" type="submit">Confimer →</button>
 
                             </form>
 

@@ -350,9 +350,9 @@ p {
 }
 
 .close {
-  color: #aaaaaa;
+  color: #060202;
   float: right;
-  font-size: 28px;
+  font-size: 5vh;
   font-weight: bold;
   margin-left: 34vw;
 }
@@ -427,6 +427,7 @@ p {
 .button-log {
   padding: 1vw;
   cursor: pointer;
+  font-size: 2vh;
   border-radius: 50%;
   border: 0.1vh solid var(--main-color);
   background-color: var(--bg-color);
@@ -447,12 +448,12 @@ p {
 .button-confirm {
   margin: 1vw auto 0 auto;
   width: 20%;
-  height: 3vw;
-  border-radius: 5px;
-  border: 2px solid var(--main-color);
+  height: 4vh;
+  border-radius: 1vh;
+  border: 0.2vh solid var(--main-color);
   background-color: var(--bg-color);
-  box-shadow: 4px 4px var(--main-color);
-  font-size: 17px;
+  box-shadow: 0.2vh  0.2vh var(--main-color);
+  font-size: 3vh;
   font-weight: 600;
   color: var(--font-color);
   cursor: pointer;
