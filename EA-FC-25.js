@@ -1,4 +1,3 @@
-
 const btn = document.getElementById("changeFormation");
 
 let plan = true;
@@ -99,9 +98,14 @@ let btnu = document.getElementById("ajout");
 
 let span = document.getElementsByClassName("close")[0];
 
-btnu.onclick = function () {
+
+btnu.addEventListener('click', ()=>{
+
+  console.log('clicked');
+  
   modal.style.display = "block";
-}
+})
+
 
 document.getElementById("sp").onclick = function () {
   modal.style.display = "none";
@@ -139,21 +143,22 @@ posit.forEach(e => {
   e.addEventListener("click", (el) => {
     id = el.target.id
     console.log(id.substring(4))
-    
+
   })
 
 });
 
 addform.addEventListener("submit", (e) => {
   e.preventDefault();
-
   let playerInfo = ("playerinfo");
   modal.style.display = "none";
   playerInfo = {
+
     nom: playerName.value,
     prenom: playerLName.value,
     nation: playerNation.value,
     club: playerClub.value,
+
     position: id.substring(4)
     
   }
@@ -161,26 +166,29 @@ addform.addEventListener("submit", (e) => {
   if (plan) {
     carts1.innerHTML += `
                   <div class="rowcart2">
-                          <img src="">
+                  <div class="kart">
                           <h1>${playerInfo.nom}</h1>
-                          <p>Position:${playerInfo.position}</p>2
+                          <h1>${playerInfo.prenom}</h1>
+                          <p>Position:${playerInfo.position}</p>
+                          </div>
                       </div>
     `
     plan = false
   } else {
     carts2.innerHTML += `
                   <div class="rowcart2">
-                          <img src="">
+                  <div class="kart">
                           <h1>${playerInfo.nom}</h1>
+                          <h1>${playerInfo.prenom}</h1>
                           <p>${playerInfo.position}</p>2
+                          </div>
                       </div>
     `
     plan = true
 
+    
   }
-
-
-
   console.log(playerInfo.nom);
 
 })
+
